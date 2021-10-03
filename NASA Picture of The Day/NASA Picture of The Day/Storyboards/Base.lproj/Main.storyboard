@@ -16,29 +16,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8z2-lz-njy">
-                                <rect key="frame" x="5" y="49" width="404" height="25.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8z2-lz-njy">
+                                <rect key="frame" x="5" y="49" width="404" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JYM-e1-iet">
-                                <rect key="frame" x="5" y="79.5" width="404" height="300"/>
+                                <rect key="frame" x="10" y="54" width="394" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="CtJ-lc-ubv"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="126" translatesAutoresizingMaskIntoConstraints="NO" id="ebs-Pg-s3T">
-                                <rect key="frame" x="5" y="384.5" width="404" height="20.5"/>
+                                <rect key="frame" x="5" y="359" width="404" height="0.0"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlz-fI-V1V">
-                                        <rect key="frame" x="0.0" y="0.0" width="139" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlz-fI-V1V">
+                                        <rect key="frame" x="0.0" y="0.0" width="139" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vhd-hz-1zz">
-                                        <rect key="frame" x="265" y="0.0" width="139" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vhd-hz-1zz">
+                                        <rect key="frame" x="265" y="0.0" width="139" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -46,11 +52,10 @@
                                 </subviews>
                             </stackView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIW-iV-Bfx">
-                                <rect key="frame" x="5" y="410" width="404" height="447"/>
+                                <rect key="frame" x="10" y="369" width="394" height="493"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r58-AE-wTa">
-                                        <rect key="frame" x="0.0" y="0.0" width="396" height="771"/>
-                                        <mutableString key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</mutableString>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r58-AE-wTa">
+                                        <rect key="frame" x="0.0" y="0.0" width="386" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -71,23 +76,23 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ebs-Pg-s3T" secondAttribute="trailing" constant="5" id="36N-oA-oAs"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JYM-e1-iet" secondAttribute="trailing" constant="5" id="FwH-FO-wh7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JYM-e1-iet" secondAttribute="trailing" constant="10" id="FwH-FO-wh7"/>
                             <constraint firstItem="8z2-lz-njy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="LxY-MY-60n"/>
                             <constraint firstItem="JYM-e1-iet" firstAttribute="top" secondItem="8z2-lz-njy" secondAttribute="bottom" constant="5" id="SBK-mP-5g1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VIW-iV-Bfx" secondAttribute="bottom" constant="5" id="SmO-hj-nMb"/>
-                            <constraint firstItem="JYM-e1-iet" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="cnZ-gJ-ufn"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VIW-iV-Bfx" secondAttribute="trailing" constant="5" id="j8w-5v-6i8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VIW-iV-Bfx" secondAttribute="bottom" id="SmO-hj-nMb"/>
+                            <constraint firstItem="JYM-e1-iet" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="cnZ-gJ-ufn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VIW-iV-Bfx" secondAttribute="trailing" constant="10" id="j8w-5v-6i8"/>
                             <constraint firstItem="ebs-Pg-s3T" firstAttribute="top" secondItem="JYM-e1-iet" secondAttribute="bottom" constant="5" id="nWk-Zv-gbQ"/>
-                            <constraint firstItem="VIW-iV-Bfx" firstAttribute="top" secondItem="ebs-Pg-s3T" secondAttribute="bottom" constant="5" id="slp-4h-fEf"/>
+                            <constraint firstItem="VIW-iV-Bfx" firstAttribute="top" secondItem="ebs-Pg-s3T" secondAttribute="bottom" constant="10" id="slp-4h-fEf"/>
                             <constraint firstItem="8z2-lz-njy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="tXI-Tv-ogE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8z2-lz-njy" secondAttribute="trailing" constant="5" id="tcn-kc-6Ym"/>
                             <constraint firstItem="ebs-Pg-s3T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="whv-Iw-mD4"/>
-                            <constraint firstItem="VIW-iV-Bfx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="zjc-dT-qXB"/>
+                            <constraint firstItem="VIW-iV-Bfx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="zjc-dT-qXB"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="credits" destination="hlz-fI-V1V" id="PsD-5A-UGp"/>
-                        <outlet property="date" destination="Vhd-hz-1zz" id="jqz-Qt-IPV"/>
+                        <outlet property="dateLabel" destination="Vhd-hz-1zz" id="E7t-0T-s7K"/>
                         <outlet property="picture" destination="JYM-e1-iet" id="xJE-le-FsP"/>
                         <outlet property="pictureDescription" destination="r58-AE-wTa" id="qXU-83-2pU"/>
                         <outlet property="scrollView" destination="VIW-iV-Bfx" id="Uco-zd-aK4"/>

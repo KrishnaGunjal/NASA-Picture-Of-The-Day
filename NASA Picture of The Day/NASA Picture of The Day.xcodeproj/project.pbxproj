@@ -16,6 +16,11 @@
 		7A398C98270867AB006D36E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A398C96270867AB006D36E8 /* LaunchScreen.storyboard */; };
 		7A398CA3270867AB006D36E8 /* NASA_Picture_of_The_DayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A398CA2270867AB006D36E8 /* NASA_Picture_of_The_DayTests.swift */; };
 		7A398CAE270867AB006D36E8 /* NASA_Picture_of_The_DayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A398CAD270867AB006D36E8 /* NASA_Picture_of_The_DayUITests.swift */; };
+		7A398CC227087680006D36E8 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A398CC127087680006D36E8 /* Common.swift */; };
+		7A398CCB2708AB14006D36E8 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A398CCA2708AB14006D36E8 /* ApiService.swift */; };
+		7A398CD42708AB97006D36E8 /* NasaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A398CD32708AB97006D36E8 /* NasaData.swift */; };
+		7A398CD92708AD9B006D36E8 /* View Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A398CD82708AD9B006D36E8 /* View Model.swift */; };
+		7A91FBE52709A0E300D29924 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A91FBE42709A0E300D29924 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		7A398CA9270867AB006D36E8 /* NASA Picture of The DayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NASA Picture of The DayUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A398CAD270867AB006D36E8 /* NASA_Picture_of_The_DayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASA_Picture_of_The_DayUITests.swift; sourceTree = "<group>"; };
 		7A398CAF270867AB006D36E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A398CC127087680006D36E8 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		7A398CCA2708AB14006D36E8 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		7A398CD32708AB97006D36E8 /* NasaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaData.swift; sourceTree = "<group>"; };
+		7A398CD82708AD9B006D36E8 /* View Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View Model.swift"; sourceTree = "<group>"; };
+		7A91FBE42709A0E300D29924 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +111,16 @@
 		7A398C87270867A9006D36E8 /* NASA Picture of The Day */ = {
 			isa = PBXGroup;
 			children = (
-				7A398C88270867A9006D36E8 /* AppDelegate.swift */,
-				7A398C8A270867A9006D36E8 /* SceneDelegate.swift */,
-				7A398C8C270867A9006D36E8 /* ViewController.swift */,
-				7A398C8E270867A9006D36E8 /* Main.storyboard */,
+				7A91FBE32709A0D400D29924 /* Extension */,
+				7A398CD22708AB57006D36E8 /* Modals */,
+				7A398CC92708AAD9006D36E8 /* API Service */,
+				7A398CC027087662006D36E8 /* Common */,
+				7A398CBF27087654006D36E8 /* View Controllers */,
+				7A398CBE27087648006D36E8 /* Storyboards */,
 				7A398C94270867AB006D36E8 /* Assets.xcassets */,
 				7A398C96270867AB006D36E8 /* LaunchScreen.storyboard */,
-				7A398C99270867AB006D36E8 /* Info.plist */,
 				7A398C91270867A9006D36E8 /* NASA_Picture_of_The_Day.xcdatamodeld */,
+				7A398CD82708AD9B006D36E8 /* View Model.swift */,
 			);
 			path = "NASA Picture of The Day";
 			sourceTree = "<group>";
@@ -129,6 +141,57 @@
 				7A398CAF270867AB006D36E8 /* Info.plist */,
 			);
 			path = "NASA Picture of The DayUITests";
+			sourceTree = "<group>";
+		};
+		7A398CBE27087648006D36E8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7A398C8E270867A9006D36E8 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		7A398CBF27087654006D36E8 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7A398C8C270867A9006D36E8 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		7A398CC027087662006D36E8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7A398C99270867AB006D36E8 /* Info.plist */,
+				7A398C88270867A9006D36E8 /* AppDelegate.swift */,
+				7A398C8A270867A9006D36E8 /* SceneDelegate.swift */,
+				7A398CC127087680006D36E8 /* Common.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		7A398CC92708AAD9006D36E8 /* API Service */ = {
+			isa = PBXGroup;
+			children = (
+				7A398CCA2708AB14006D36E8 /* ApiService.swift */,
+			);
+			path = "API Service";
+			sourceTree = "<group>";
+		};
+		7A398CD22708AB57006D36E8 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				7A398CD32708AB97006D36E8 /* NasaData.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
+		7A91FBE32709A0D400D29924 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7A91FBE42709A0E300D29924 /* Extensions.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +325,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A398C8D270867A9006D36E8 /* ViewController.swift in Sources */,
+				7A91FBE52709A0E300D29924 /* Extensions.swift in Sources */,
 				7A398C89270867A9006D36E8 /* AppDelegate.swift in Sources */,
+				7A398CD42708AB97006D36E8 /* NasaData.swift in Sources */,
+				7A398CCB2708AB14006D36E8 /* ApiService.swift in Sources */,
 				7A398C8B270867A9006D36E8 /* SceneDelegate.swift in Sources */,
+				7A398CC227087680006D36E8 /* Common.swift in Sources */,
 				7A398C93270867A9006D36E8 /* NASA_Picture_of_The_Day.xcdatamodeld in Sources */,
+				7A398CD92708AD9B006D36E8 /* View Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,7 +509,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "NASA Picture of The Day/Info.plist";
+				INFOPLIST_FILE = "NASA Picture of The Day/Common/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,7 +517,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "krishna.NASA-Picture-of-The-Day";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -459,7 +527,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "NASA Picture of The Day/Info.plist";
+				INFOPLIST_FILE = "NASA Picture of The Day/Common/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -467,7 +535,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "krishna.NASA-Picture-of-The-Day";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
