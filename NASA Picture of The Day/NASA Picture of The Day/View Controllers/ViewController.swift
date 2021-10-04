@@ -30,13 +30,38 @@ class ViewController: UIViewController {
         
         self.topicTitle.text = data.title ?? constant.unknown
         self.picture.loadImage(url: data.url ?? constant.unknown, placeholder: UIImage(named: constant.placeholderImage))
-        self.credits.text = data.copyright ?? constant.unknown
+        self.credits.text = data.copyright ?? ""
         self.dateLabel.text = data.date ?? date.getCurrentDate()
         self.pictureDescription.text = data.explanation ?? constant.unknown
     }
-
-
+    
+    @IBAction func shareButton(_ sender: Any) {
+        do {
+            let imgData = try NSData(contentsOf: URL.init(string: viewModel.albumData.url!)!, options: NSData.ReadingOptions())
+            let image = UIImage(data: imgData as Data)
+            let imageToShare = [ image! ]
+            
+            let activityViewController = UIActivityViewController(activityItems: imageToShare, applicationActivities: nil)
+            activityViewController.popoverPresentationController?.sourceView = self.view
+            
+            activityViewController.excludedActivityTypes = [ UIActivity.ActivityType.airDrop, UIActivity.ActivityType.postToFacebook ]
+            
+            self.present(activityViewController, animated: true, completion: nil)
+            
+        } catch {
+            DispatchQueue.main.async {
+                let alertController = UIAlertController(title: "Error!", message: "Something went wrong", preferredStyle: .alert)
+                
+                let okAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+                alertController.addAction(okAction)
+                
+                self.present(alertController, animated: true, completion: nil)
+            }
+        }
+    }
 }
+
+
 
 extension ViewController: DataViewModelDelegate {
     func dataFetchError(error: DataError) {
